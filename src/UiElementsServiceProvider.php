@@ -27,6 +27,7 @@ class UiElementsServiceProvider extends ServiceProvider
         ], 'assets');
 
         // Blade-Components registrieren
+        Blade::component('ui-elements::components.ui-styles', 'ui-styles');
         Blade::component('ui-elements::components.button', 'ui-button');
     }
 
