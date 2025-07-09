@@ -15,5 +15,11 @@
         "Martin3r\\LaravelUiElements\\UiElementsServiceProvider"
       ]
     }
+  },
+  "scripts": {
+    "post-update-cmd": [
+      "@php artisan vendor:publish --provider=\"Martin3r\\LaravelUiElements\\UiElementsServiceProvider\" --tag=assets --force"
+    ]
   }
+}
 }
