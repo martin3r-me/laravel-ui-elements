@@ -1,0 +1,19 @@
+{
+  "name": "martin3r-me/laravel-ui-elements",
+  "description": "Wiederverwendbare UI-Bausteine für Laravel (Buttons, Modals, Sidebars, Navbars)",
+  "type": "library",
+  "license": "MIT",
+  
+  "autoload": {
+    "psr-4": {
+      "Martin3r\\LaravelUiElements\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Martin3r\\LaravelUiElements\\UiElementsServiceProvider"
+      ]
+    }
+  }
+}
