@@ -5,7 +5,7 @@
     $errorKey = $errorKey ?: $name;
 @endphp
 
-<div>
+<div {{ $attributes->only('class') }}> {{-- hier holen wir uns nur class --}}
   @if($label)
     <label for="{{ $name }}" class="block text-sm font-medium text-gray-700 mb-1">
       {{ $label }}
@@ -18,16 +18,7 @@
       id="{{ $name }}"
       name="{{ $name }}"
       value="{{ old($name, $value) }}"
-      {{ $attributes->merge([
-          'class' => implode(' ', [
-              'form-control',
-              "border-{$variant}",              // border-primary
-              "focus:border-{$variant}",        // focus:border-primary
-              "focus:ring-2",
-              "focus:ring-{$variant}",          // focus:ring-primary
-              "focus:ring-offset-1 focus:ring-offset-white",
-          ]),
-      ]) }}
+      class="form-control border-{{ $variant }} focus:border-{{ $variant }} focus:ring-2 focus:ring-{{ $variant }} focus:ring-offset-1 focus:ring-offset-white"
     />
   </div>
 
