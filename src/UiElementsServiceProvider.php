@@ -29,6 +29,7 @@ class UiElementsServiceProvider extends ServiceProvider
         // Blade-Components registrieren
         Blade::component('ui-elements::components.ui-styles', 'ui-styles');
         Blade::component('ui-elements::components.button', 'ui-button');
+        Blade::component('ui-elements::components.form.input-text', 'form-input-text');
     }
 
     public function register(): void
