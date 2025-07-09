@@ -11,15 +11,15 @@ class UiElementsServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // Views laden & publishen
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'ui-elements');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'ui-elements');
         $this->publishes([
-            __DIR__.'/../resources/views' => resource_path('views/vendor/ui-elements'),
+            __DIR__ . '/../resources/views' => resource_path('views/vendor/ui-elements'),
         ], 'views');
 
         // Assets publishen
         $this->publishes([
-            __DIR__.'/../resources/assets/css/ui-elements.css' => public_path('vendor/ui-elements/ui-elements.css'),
-            __DIR__.'/../resources/assets/js/ui-elements.js'   => public_path('vendor/ui-elements/ui-elements.js'),
+            __DIR__ . '/../resources/assets/css/ui-elements.css' => public_path('vendor/ui-elements/ui-elements.css'),
+            __DIR__ . '/../resources/assets/js/ui-elements.js'   => public_path('vendor/ui-elements/ui-elements.js'),
         ], 'assets');
 
         // Blade-Components registrieren
@@ -34,6 +34,9 @@ class UiElementsServiceProvider extends ServiceProvider
     public function register(): void
     {
         // Config mergen
-        $this->mergeConfigFrom(__DIR__.'/../config/ui-elements.php', 'ui-elements');
+        $this->mergeConfigFrom(
+            __DIR__ . '/../config/ui-elements.php',
+            'ui-elements'
+        );
     }
 }
