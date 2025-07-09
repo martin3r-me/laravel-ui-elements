@@ -24,11 +24,6 @@ class UiElementsServiceProvider extends ServiceProvider
 
         // Blade-Components registrieren
         Blade::component('ui-elements::components.button', 'ui-button');
-
-        // Livewire-Komponenten registrieren (optional)
-        if (class_exists(Livewire::class)) {
-            Livewire::component('ui-modal', \Martin3r\LaravelUiElements\Http\Livewire\UiModal::class);
-        }
     }
 
     public function register(): void
