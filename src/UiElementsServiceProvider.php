@@ -15,6 +15,10 @@ class UiElementsServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../resources/views' => resource_path('views/vendor/ui-elements'),
         ], 'views');
+        // In der Boot-Methode, direkt vor dem Views-Publish-Block
+        $this->publishes([
+            __DIR__ . '/../config/ui-elements.php' => config_path('ui-elements.php'),
+        ], 'config');
 
         // Assets publishen
         $this->publishes([
