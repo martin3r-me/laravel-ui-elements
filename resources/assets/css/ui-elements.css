@@ -1,0 +1,25 @@
+:root {
+  /* aus config/ui-elements.php */
+  --ui-primary:   #4F46E5;
+  --ui-secondary: #6B7280;
+  --ui-success:   #10B981;
+  --ui-danger:    #EF4444;
+  --ui-warning:   #F59E0B;
+  --ui-info:      #3B82F6;
+}
+
+/* Hintergrund-Klassen */
+.bg-primary    { background-color: var(--ui-primary); }
+.bg-secondary  { background-color: var(--ui-secondary); }
+.bg-success    { background-color: var(--ui-success); }
+.bg-danger     { background-color: var(--ui-danger); }
+.bg-warning    { background-color: var(--ui-warning); }
+.bg-info       { background-color: var(--ui-info); }
+
+/* Text-Farb-Klassen */
+.text-primary    { color: var(--ui-primary); }
+.text-secondary  { color: var(--ui-secondary); }
+.text-success    { color: var(--ui-success); }
+.text-danger     { color: var(--ui-danger); }
+.text-warning    { color: var(--ui-warning); }
+.text-info       { color: var(--ui-info); }
