@@ -11,7 +11,7 @@
     $errorKey = $errorKey ?: $name;
 @endphp
 
-<div class="mb-4">
+<div>
     {{-- Label --}}
     @if($label)
         <label for="{{ $name }}" class="block text-sm font-medium text-gray-700 mb-1">
