@@ -1,14 +1,20 @@
 :root {
-  /* aus config/ui-elements.php */
-  --ui-primary:   #4F46E5;
-  --ui-secondary: #6B7280;
-  --ui-success:   #10B981;
-  --ui-danger:    #EF4444;
-  --ui-warning:   #F59E0B;
-  --ui-info:      #3B82F6;
+  /* Farb-Variablen aus config/ui-elements.php */
+  --ui-primary:        #4F46E5;
+  --ui-on-primary:     #FFFFFF;
+  --ui-secondary:      #6B7280;
+  --ui-on-secondary:   #FFFFFF;
+  --ui-success:        #10B981;
+  --ui-on-success:     #FFFFFF;
+  --ui-danger:         #EF4444;
+  --ui-on-danger:      #FFFFFF;
+  --ui-warning:        #F59E0B;
+  --ui-on-warning:     #000000;
+  --ui-info:           #3B82F6;
+  --ui-on-info:        #FFFFFF;
 }
 
-/* Hintergrund-Klassen */
+/* Hintergrund-Utilities */
 .bg-primary    { background-color: var(--ui-primary); }
 .bg-secondary  { background-color: var(--ui-secondary); }
 .bg-success    { background-color: var(--ui-success); }
@@ -16,10 +22,10 @@
 .bg-warning    { background-color: var(--ui-warning); }
 .bg-info       { background-color: var(--ui-info); }
 
-/* Text-Farb-Klassen */
-.text-primary    { color: var(--ui-primary); }
-.text-secondary  { color: var(--ui-secondary); }
-.text-success    { color: var(--ui-success); }
-.text-danger     { color: var(--ui-danger); }
-.text-warning    { color: var(--ui-warning); }
-.text-info       { color: var(--ui-info); }
+/* Text-Utilities (On-Colors für Kontrast) */
+.text-on-primary    { color: var(--ui-on-primary); }
+.text-on-secondary  { color: var(--ui-on-secondary); }
+.text-on-success    { color: var(--ui-on-success); }
+.text-on-danger     { color: var(--ui-on-danger); }
+.text-on-warning    { color: var(--ui-on-warning); }
+.text-on-info       { color: var(--ui-on-info); }
