@@ -3,7 +3,7 @@
 namespace Martin3r\LaravelUiElements;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facade\Blade;
+use Illuminate\Support\Facades\Blade;
 use Livewire\Livewire;
 
 class UiElementsServiceProvider extends ServiceProvider
