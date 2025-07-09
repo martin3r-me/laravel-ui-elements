@@ -29,3 +29,82 @@
 .text-on-danger     { color: var(--ui-on-danger); }
 .text-on-warning    { color: var(--ui-on-warning); }
 .text-on-info       { color: var(--ui-on-info); }
+
+/* Border-Utilities */
+.border-primary      { border-color: var(--ui-primary); }
+.border-secondary    { border-color: var(--ui-secondary); }
+.border-success      { border-color: var(--ui-success); }
+.border-danger       { border-color: var(--ui-danger); }
+.border-warning      { border-color: var(--ui-warning); }
+.border-info         { border-color: var(--ui-info); }
+
+/* Focus-Ring-Utilities */
+.focus-ring-primary:focus      { box-shadow: 0 0 0 2px var(--ui-primary); }
+.focus-ring-secondary:focus    { box-shadow: 0 0 0 2px var(--ui-secondary); }
+.focus-ring-success:focus      { box-shadow: 0 0 0 2px var(--ui-success); }
+.focus-ring-danger:focus       { box-shadow: 0 0 0 2px var(--ui-danger); }
+.focus-ring-warning:focus      { box-shadow: 0 0 0 2px var(--ui-warning); }
+.focus-ring-info:focus         { box-shadow: 0 0 0 2px var(--ui-info); }
+
+/* Disabled-State */
+.disabled { opacity: 0.6; cursor: not-allowed; }
+
+/* Form-Control Base */
+.form-control {
+  height: 2.5rem; /* h-10 */
+  width: 100%;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--ui-primary);
+  background-color: transparent;
+  border-radius: 0.5rem;
+}
+.form-control:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Utility für Input-Group (Icon + Field) */
+.input-group {
+  display: flex;
+  align-items: center;
+}
+.input-group .group-icon {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.input-group .group-input {
+  flex: 1;
+}
+
+/* Button-Variants als Utility-Klasse */
+.btn {
+  height: 2.5rem; /* h-10 */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Spinner (z.B. für Loading-Buttons) */
+.spinner {
+  border: 2px solid transparent;
+  border-top-color: var(--ui-primary);
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
