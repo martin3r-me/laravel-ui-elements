@@ -31,10 +31,10 @@
                     'form-control',                     // Basis-Höhe, Padding, Radius
                     "border-{$variant}",                // border-primary → var(--ui-primary)
                     "focus:border-{$variant}",          // focus:border-primary
-                    "focus:ring-2",                     // Ring-Breite
-                    "focus:ring-{$variant}",            // focus:ring-primary (100% Deckkraft)
-                    "focus:ring-offset-1",              // Abstand Ring ↔ Border
-                    "focus:ring-offset-white",          // weißer Hintergrund hinter dem Ring
+                    "focus:outline-2",                     // Ring-Breite
+                    "focus:outline-{$variant}",            // focus:ring-primary (100% Deckkraft)
+                    "focus:outline-offset-1",              // Abstand Ring ↔ Border
+                    "focus:outline-offset-white",          // weißer Hintergrund hinter dem Ring
                 ]),
             ]) }}
         />
